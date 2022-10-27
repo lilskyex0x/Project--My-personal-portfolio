@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 320px;
+    height: 4910px;
+    background: #FFFFFF;
+}
+/* ----------------toolbar CSS-------------------------- */
+.shape1{
+    position: absolute;
+    width: 111px;
+    height: 74px;
+    left: 0px;
+    top: 0px;
+}
+
+.shape2{
+    position: absolute;
+    width: 320px;
+    height: 160px;
+    left: 0px;
+    top: 377px;
+    margin-top: 32px;
+}
+
+.bars{
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    left: 284px;
+    top: 19px;
+}
+
+/* ----------------Headline CSS------------------------- */
+
+.main{
+    position: absolute;
+    width: 288px;
+    height: 336px;
+    left: 16px;
+    top: 104px;
+}
+.name{
+    width: 220px;
+    height: 60px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1A2236;
+}
+
+.about{
+    width: 288px;
+    height: 147px;
+    top: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #1A2236;
+}
+
+.btn{
+    left: 5%;
+    right: 5%;
+    top: 7.94%;
+    bottom: 91.04%;
+}
+/* ------------------------------------------------------- */

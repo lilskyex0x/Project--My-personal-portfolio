@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -12,20 +14,13 @@ body {
 }
 
 /* ----------------toolbar CSS-------------------------- */
-.shape1 {
-  position: absolute;
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
-}
 
 .shape2 {
   position: absolute;
   width: 320px;
   height: 160px;
   left: 0;
-  top: 377px;
+  top: 472px;
   margin-top: 32px;
 }
 
@@ -39,18 +34,13 @@ body {
 
 /* ----------------Headline CSS------------------------- */
 
-.main {
+.name {
   position: absolute;
-  width: 288px;
-  height: 336px;
+  width: 220px;
+  height: 100px;
   left: 16px;
   top: 104px;
-}
-
-.name {
-  width: 220px;
-  height: 60px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -59,23 +49,34 @@ body {
 }
 
 .about {
-  width: 288px;
-  height: 147px;
-  top: 54px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  width: 246px;
+  height: 126px;
+  left: 16px;
+  top: 224px;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #1a2236;
 }
 
 .btn {
-  left: 5%;
-  right: 5%;
-  top: 7.94%;
-  bottom: 91.04%;
+  position: absolute;
+  width: 288px;
+  height: 50px;
+  left: 16px;
+  top: 390px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #1a2236;
 }
 
 /* ------------------------------------------------------- */

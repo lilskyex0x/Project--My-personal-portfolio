@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500;600;800&family=Roboto:wght@300&display=swap');
 
 * {
   padding: 0;
@@ -13,7 +13,16 @@ body {
   background: #fff;
 }
 
-/* ----------------toolbar CSS-------------------------- */
+.title_font {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+/* ----------------toolbar section CSS-------------------------- */
 
 .shape2 {
   position: absolute;
@@ -21,7 +30,6 @@ body {
   height: 160px;
   left: 0;
   top: 472px;
-  margin-top: 32px;
 }
 
 .bars {
@@ -32,7 +40,7 @@ body {
   top: 19px;
 }
 
-/* ----------------Headline CSS------------------------- */
+/* ----------------Headline section CSS------------------------- */
 
 .name {
   position: absolute;
@@ -40,15 +48,9 @@ body {
   height: 100px;
   left: 16px;
   top: 104px;
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 100%;
-  color: #1a2236;
 }
 
-.about {
+.feature {
   position: absolute;
   width: 246px;
   height: 126px;
@@ -63,7 +65,7 @@ body {
   color: #1a2236;
 }
 
-.btn {
+.main_btn {
   position: absolute;
   width: 288px;
   height: 50px;
@@ -79,4 +81,224 @@ body {
   background: #1a2236;
 }
 
-/* ------------------------------------------------------- */
+/* -------------------Work Section CSS-------------------------------- */
+
+.work {
+  position: absolute;
+  width: 320px;
+  height: 2134px;
+  left: 0;
+  top: 672px;
+}
+
+.projectH1 {
+  position: absolute;
+  width: 181px;
+  height: 50px;
+  left: 16px;
+}
+
+.showcase {
+  width: 320px;
+  height: 2052px;
+  margin-top: 82px;
+}
+
+.project {
+  width: 320px;
+  height: 342px;
+}
+
+.project_img {
+  position: absolute;
+  width: 320px;
+  height: 186px;
+  border: 0.333333px solid rgba(15, 1, 1, 0.1);
+}
+
+.menu {
+  position: absolute;
+  width: 320px;
+  height: 156px;
+  margin-top: 186px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5px);
+}
+
+.sub_title {
+  position: absolute;
+  width: 264px;
+  height: 16px;
+  left: 20px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+}
+
+.list {
+  width: auto;
+  height: 20px;
+  left: 10px;
+  margin-top: 52px;
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.btn2 {
+  width: auto;
+  height: 20px;
+  left: 20px;
+  padding: 6px 10px;
+  margin-left: 10px;
+  background: #98dede;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.btn3 {
+  width: 178px;
+  height: 44px;
+  margin-top: 92px;
+  margin-left: 20px;
+  border: 1px solid #fff;
+}
+
+.text {
+  position: absolute;
+  width: 124px;
+  height: 24px;
+  margin: 10px 44px 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  margin: 10px 10px 10px 144px;
+}
+
+/* -----------------------About section CSS------------------------------- */
+
+.about {
+  position: absolute;
+  width: 290px;
+  height: 1217px;
+  left: 15px;
+  top: 2862px;
+}
+
+.about_feature {
+  position: absolute;
+  width: 288px;
+  height: 126px;
+  top: 64px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.cv_block {
+  width: 288px;
+  height: 278px;
+}
+
+.cv_btn {
+  width: 288px;
+  height: 50px;
+  margin-top: 178px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #1a2236;
+}
+
+.download {
+  width: 130px;
+  height: 24px;
+}
+
+.mask_block {
+  width: 289px;
+  height: 289px;
+  margin-top: 40px;
+  background: #1c528a;
+}
+
+.mask_block2 {
+  width: 289px;
+  height: 289px;
+  margin-top: 16px;
+  background: #e2505c;
+}
+
+.mask_block3 {
+  width: 289px;
+  height: 289px;
+  margin-top: 16px;
+  background: #febf52;
+}
+
+.mask_img {
+  position: absolute;
+  width: 102px;
+  height: 102px;
+  margin: 187px 0 0 187px;
+}
+
+.list_text {
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  margin: 50px 123px 209px 50px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.listings {
+  position: absolute;
+  width: 178px;
+  height: 135px;
+  margin: 101px 61px 53px 50px;
+  list-style-position: inside;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+}
+
+/* --------------------------------------------------------------------------------------- */

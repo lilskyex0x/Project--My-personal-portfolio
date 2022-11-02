@@ -227,28 +227,46 @@
     <!-- about section ends -->
 
     <!-- Contact Form section starts here -->
-    <section class="container">
-        <header class="name title_font">Get Started</header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio?</p>
-        <form class="form" action="" method="POST">
+    <section class="form-container">
+        <div class="img_geometry">
+            <img src="img/image_geometry_1.png" alt="" class="shape1">
+        </div>
+        <header class="title_font">Get Started</header>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio? Lorem ipsum dolor sit amet.</p>
+        <form class="form" action="https://formspree.io/f/xqkjgdvv" method="POST">
             <ul>
                 <li>
-                    <input type="text" name="name" placeholder="Your Name" maxlength="30">
+                    <input type="text" name="name" placeholder="Your Name" maxlength="30" required>
                 </li>
                 <li>
-                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </li>
                 <li>
-                    <textarea name="message" placeholder="Enter your message here..." maxlength="500">
+                    <textarea name="message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500"></textarea>
                 </li>
                 <li>
-                    <input type="button" placeholder="Start collaboration">
+                    <button type="submit">Start collaboration</button>
                 </li>
             </ul>
         </form>
-
     </section>
     <!-- Contact Form section end here -->
+
+    <!-- Resume section starts here -->
+    <section class="resume-container">
+        <div class="resume-menu">
+            <a href="#">Get my Resume <img class="resume-icon" src="img/Union.svg" alt=""></a>
+            <ul class="social-links">
+                <li><a href="#"><img src="img/ic_stackoverflow.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/ic_github.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/Vector.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/Vector (1).svg" alt=""></a></li>
+                <li><a href="#"><img src="img/Vector (2).svg" alt=""></a></li>
+                <li><a href="#"><img src="img/Vector (3).svg" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Resume section ends here -->
 
 </body>
 

@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -80,6 +81,13 @@ body {
   text-align: center;
   color: #fff;
   background: #1a2236;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.main_btn:hover {
+  background-color: #fff;
+  color: #1a2236;
 }
 
 /* -------------------Work Section CSS-------------------------------- */
@@ -168,6 +176,13 @@ body {
   font-size: 10.3334px;
   line-height: 80%;
   color: #1a2236;
+  transition: 0.5s;
+}
+
+.btn2:hover {
+  background-color: #1a2236;
+  color: #98dede;
+  border: 1px solid #fff;
 }
 
 .btn3 {
@@ -330,10 +345,12 @@ body {
   color: #fff;
 }
 
-/* --------------------------------------------------------------------------------------- */
+/* ----------------------------------Form section CSS----------------------------------------------------- */
 
 .form-container {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 322px;
   height: 813px;
   left: -2px;
@@ -345,7 +362,7 @@ body {
   width: 255px;
   height: 50px;
   left: 16px;
-  margin-top: 31.98px;
+  margin-top: 106px;
 }
 
 .form-container p {
@@ -353,7 +370,7 @@ body {
   width: 288px;
   height: 63px;
   left: 16px;
-  margin-top: 101.98px;
+  margin-top: 176px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -365,6 +382,8 @@ body {
 
 .form {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   left: 16px;
   top: 263px;
 }
@@ -395,8 +414,7 @@ body {
   width: 288px;
   height: 112px;
   margin-top: 8px;
-  padding-left: 16px;
-  padding-top: 15px;
+  padding: 10px;
   background: #fff;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
@@ -426,6 +444,13 @@ body {
   text-align: center;
   color: #fff;
   background: #1a2236;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #fff;
+  color: #1a2236;
 }
 
 /* --------------------------------Resume Section CSS------------- */
@@ -457,6 +482,10 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #92dcdc;
+}
+
+.listings li a {
+  color: #fff;
 }
 
 .resume-icon {

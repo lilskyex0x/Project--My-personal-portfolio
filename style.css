@@ -42,22 +42,38 @@ body {
   top: 19px;
 }
 
+.navbar__links {
+  display: none;
+}
+
 /* ----------------Headline section CSS------------------------- */
 
-.name {
+.header {
+  height: 570px;
+}
+
+.header-banner {
   position: absolute;
-  width: 220px;
-  height: 100px;
+  width: 288px;
+  height: 336px;
   left: 16px;
   top: 104px;
 }
 
+.name {
+  width: 220px;
+  height: 100px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
 .feature {
-  position: absolute;
-  width: 246px;
+  width: 261px;
   height: 126px;
-  left: 16px;
-  top: 224px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -68,11 +84,9 @@ body {
 }
 
 .main_btn {
-  position: absolute;
   width: 288px;
   height: 50px;
-  left: 16px;
-  top: 390px;
+  margin-top: 40px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -90,31 +104,40 @@ body {
   color: #1a2236;
 }
 
+.img_geometry1 {
+  display: none;
+}
+
 /* -------------------Work Section CSS-------------------------------- */
 
 .work {
-  position: absolute;
   display: grid;
   width: 320px;
   height: 2134px;
-  left: 0;
-  top: 672px;
 }
 
 .projectH1 {
-  position: absolute;
-  width: 181px;
-  height: 50px;
-  left: 16px;
+  margin: 16px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
 }
 
 .showcase {
   width: 320px;
   height: 2052px;
-  margin-top: 82px;
+  margin-top: 16px;
 }
 
-.project {
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
   display: flex;
   width: 320px;
   height: 342px;
@@ -128,7 +151,6 @@ body {
 }
 
 .menu {
-  position: absolute;
   width: 320px;
   height: 156px;
   margin-top: 186px;
@@ -138,11 +160,9 @@ body {
 }
 
 .sub_title {
-  position: absolute;
   width: 264px;
   height: 16px;
-  left: 20px;
-  margin-top: 20px;
+  margin: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -154,9 +174,7 @@ body {
 .list {
   width: auto;
   height: 20px;
-  left: 10px;
-  margin-top: 52px;
-  position: absolute;
+  margin: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -165,9 +183,8 @@ body {
 .btn2 {
   width: auto;
   height: 20px;
-  left: 20px;
   padding: 6px 10px;
-  margin-left: 10px;
+  margin-right: 10px;
   background: #98dede;
   border: 0;
   font-family: 'Poppins', sans-serif;
@@ -191,8 +208,7 @@ body {
   justify-content: center;
   width: 178px;
   height: 44px;
-  margin-top: 92px;
-  margin-left: 20px;
+  margin: 20px;
   background-color: transparent;
   transition: ease-out 0.3s;
   overflow: hidden;
@@ -244,18 +260,15 @@ body {
 /* -----------------------About section CSS------------------------------- */
 
 .about {
-  position: absolute;
   width: 290px;
   height: 1217px;
-  left: 15px;
-  top: 2862px;
+  padding: 15px;
 }
 
 .about_feature {
-  position: absolute;
   width: 288px;
   height: 126px;
-  top: 64px;
+  margin-top: 70px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -268,31 +281,44 @@ body {
 .cv_block {
   width: 288px;
   height: 278px;
+  margin-top: 56px;
 }
 
 .cv_btn {
   width: 288px;
   height: 50px;
-  margin-top: 178px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #fff;
   background: #1a2236;
+  transition: 0.5s;
 }
 
-.download {
+.cv_btn:hover {
+  background-color: #92dcdc;
+  color: #1a2236;
+  cursor: pointer;
+}
+
+.cv_btn a {
   width: 130px;
   height: 24px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
 }
 
 .mask_block {
   width: 289px;
   height: 289px;
-  margin-top: 40px;
+  margin-top: 90px;
   background: #1c528a;
 }
 
@@ -315,6 +341,10 @@ body {
   width: 102px;
   height: 102px;
   margin: 187px 0 0 187px;
+}
+
+.mask_dot {
+  display: none;
 }
 
 .list_text {
@@ -349,12 +379,11 @@ body {
 
 .form-container {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 322px;
+  width: 320px;
   height: 813px;
   left: -2px;
-  top: 4129px;
+  top: 4205px;
+  background: #f9f9fa;
 }
 
 .form-container header {
@@ -362,7 +391,7 @@ body {
   width: 255px;
   height: 50px;
   left: 16px;
-  margin-top: 106px;
+  margin-top: 28px;
 }
 
 .form-container p {
@@ -370,7 +399,7 @@ body {
   width: 288px;
   height: 63px;
   left: 16px;
-  margin-top: 176px;
+  margin-top: 104px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -385,7 +414,7 @@ body {
   display: flex;
   flex-direction: column;
   left: 16px;
-  top: 263px;
+  top: 293px;
 }
 
 .form input:nth-child(1) {
@@ -457,19 +486,12 @@ body {
 
 .resume-container {
   position: absolute;
+  padding: 32px 16px 40px 16px;
   width: 320px;
   height: 150px;
   left: 0;
-  top: 4760px;
+  top: 4869px;
   background: #1a2236;
-}
-
-.resume-menu {
-  position: absolute;
-  width: 288px;
-  height: 78px;
-  left: 16px;
-  margin-top: 32px;
 }
 
 .resume-container a {
@@ -503,3 +525,490 @@ body {
   width: 288px;
   height: 24px;
 }
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Media_Query--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+  body {
+    position: relative;
+    width: 1440px;
+    height: 4852px;
+  }
+
+  .img_geometry,
+  .bars {
+    display: none;
+  }
+
+  /* -----------------Navbar_Section_Media_Query--------------------------- */
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  .navbar__links {
+    display: block;
+  }
+
+  .navbar__links ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__links a {
+    padding: 5px;
+    margin: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a2236;
+    transition: 0.3s;
+  }
+
+  .cv_btn a {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .navbar__links a:hover {
+    color: #92dcdc;
+    box-shadow: 0 1px 0 #1a2236;
+  }
+
+  /* ----------------------Header_Section_Media_Query------------------------- */
+
+  .header {
+    height: 880px;
+  }
+
+  .header-banner {
+    position: absolute;
+    width: 484px;
+    height: 415px;
+    left: 160px;
+    top: 292px;
+  }
+
+  .name {
+    width: 484px;
+    height: 220px;
+  }
+
+  .title_font {
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .feature {
+    width: 484px;
+    height: 84px;
+  }
+
+  .main_btn {
+    width: 254px;
+    height: 70px;
+  }
+
+  .img_geometry1 {
+    display: block;
+    float: right;
+    z-index: -5;
+  }
+
+  .img_geometry1 img:nth-child(2) {
+    width: 702px;
+    height: 877px;
+  }
+
+  .img_geometry1 img:nth-child(3) {
+    position: absolute;
+    width: 511px;
+    height: 350px;
+    left: 464px;
+    top: 1727px;
+  }
+
+  .img_geometry1 img:nth-child(4) {
+    position: absolute;
+    width: 639.75px;
+    height: 275.42px;
+    left: 800px;
+    top: 2263px;
+  }
+
+  .img_geometry1 img:nth-child(5) {
+    position: absolute;
+    width: 87.69px;
+    height: 87.71px;
+    left: 712px;
+    top: 2539px;
+  }
+
+  .img_geometry1 img:nth-child(6) {
+    position: absolute;
+    width: 211.7px;
+    height: 124.04px;
+    left: 0;
+    top: 2540px;
+  }
+
+  .img_geometry1 img:nth-child(7) {
+    position: absolute;
+    width: 263.06px;
+    height: 350.84px;
+    left: 0;
+    top: 3782px;
+    z-index: 99999;
+  }
+
+  .img_geometry1 img:nth-child(8) {
+    position: absolute;
+    width: 350.75px;
+    height: 350.84px;
+    left: 1089px;
+    top: 4378px;
+    z-index: 9999;
+  }
+
+  /* -----------------------Work_Section_Media_Query---------------------------- */
+
+  .work {
+    height: 1643px;
+  }
+
+  .dots {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 326px;
+    top: 1192px;
+  }
+
+  .projectH1 {
+    position: absolute;
+    top: 1306px;
+    font-size: 110px;
+    transform: rotate(-90deg);
+  }
+
+  /* ------Project 1----- */
+
+  .project1 {
+    position: absolute;
+    width: 960px;
+    height: 558px;
+    left: 480px;
+    top: 1187px;
+  }
+
+  .project1 .project_img {
+    width: 960px;
+    height: 542px;
+  }
+
+  .project1 .menu {
+    width: 960px;
+    height: 353px;
+    padding: 60px;
+    background: rgba(26, 34, 54, 0.95);
+    backdrop-filter: blur(12px);
+  }
+
+  .project1 .menu .sub_title {
+    width: 779px;
+    height: 48px;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .project1 .menu .list {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .project1 .menu .list .btn2 {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  .project1 .menu .btn3 {
+    margin: 0;
+    margin-top: 80px;
+    width: 212px;
+    height: 51px;
+  }
+
+  .project1 .menu .btn3 .text {
+    font-size: 18px;
+  }
+
+  /* ----------Project 2-------- */
+
+  .project2 {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 0;
+    top: 1825px;
+  }
+
+  .project2 .project_img {
+    width: 464px;
+    height: 255px;
+  }
+
+  .project2 .menu {
+    display: none;
+  }
+
+  /* ---------Project 3---------- */
+
+  .project3 {
+    position: absolute;
+    width: 800px;
+    height: 465px;
+    left: 0;
+    top: 2075px;
+  }
+
+  .project3 .project_img {
+    width: 800px;
+    height: 465px;
+  }
+
+  .project3 .menu {
+    display: none;
+  }
+
+  /* ---------Project 4------------ */
+
+  .project4 {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 799px;
+    top: 2536px;
+  }
+
+  .project4 .project_img {
+    width: 465px;
+    height: 270px;
+  }
+
+  .project4 .menu {
+    display: none;
+  }
+
+  /* ---------Project 5------------ */
+
+  .project5 {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 465px;
+    height: 218px;
+    right: 0;
+    top: 1779px;
+  }
+
+  .project5 .project_img {
+    width: 465px;
+    height: 270px;
+    margin-top: 216px;
+  }
+
+  .project5 .menu {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project5 .menu .sub_title {
+    width: 578px;
+    height: 32px;
+    margin: 0;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .project5 .menu .list {
+    margin: 0;
+    padding: 30px;
+  }
+
+  .project5 .menu .list .btn2 {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+  .project5 .menu .btn3 {
+    margin: 30px;
+    width: 212px;
+    height: 51px;
+  }
+
+  .project5 .menu .btn3 .text {
+    font-size: 18px;
+  }
+
+  /* ----------Project 6---------- */
+
+  .project6 {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 975px;
+    top: 1726px;
+  }
+
+  .project6 .project_img {
+    width: 465px;
+    height: 270px;
+  }
+
+  .project6 .menu {
+    display: none;
+  }
+
+  /* ----------------About Section Media Query------------------- */
+
+  .about {
+    position: absolute;
+    width: 1120px;
+    height: 586px;
+    top: 2943px;
+    left: 160px;
+    right: 160px;
+  }
+
+  .cv_block {
+    position: absolute;
+    width: 446px;
+    height: 336px;
+    margin-top: 28px;
+    right: 0;
+  }
+
+  .about_feature {
+    width: 446px;
+    height: 84px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .cv_btn {
+    width: 254px;
+    height: 70px;
+  }
+
+  .mask_container {
+    display: grid;
+    grid-template-columns: 26.5% 26.5%;
+  }
+
+  .mask_block,
+  .mask_block2,
+  .mask_block3 {
+    margin: 0;
+  }
+
+  .mask_dot {
+    display: block;
+    position: absolute;
+    width: 222.02px;
+    height: 222px;
+    left: 371px;
+    top: 381px;
+  }
+
+  /* --------------------------Form_Section_Media_Query--------------------------- */
+
+  .form-container {
+    position: absolute;
+    width: 1440px;
+    height: 950px;
+    left: 0;
+    top: 3782px;
+  }
+
+  .form-container header {
+    position: absolute;
+    width: 635px;
+    height: 110px;
+    left: 446px;
+    margin-top: 168px;
+    font-weight: 400;
+    font-size: 110px;
+  }
+
+  .form-container p {
+    position: absolute;
+    width: 548px;
+    height: 63px;
+    left: 446px;
+    margin-top: 318px;
+  }
+
+  .form input[type=text] {
+    position: absolute;
+    width: 254px;
+    height: 60px;
+    left: 428px;
+    margin-top: 160px;
+    font-size: 15px;
+  }
+
+  .form input[type=email] {
+    position: absolute;
+    width: 254px;
+    height: 60px;
+    left: 738px;
+    margin-top: 160px;
+    font-size: 15px;
+  }
+
+  .form textarea {
+    position: absolute;
+    width: 563px;
+    height: 140px;
+    left: 428px;
+    margin-top: 253px;
+  }
+
+  .form button {
+    position: absolute;
+    width: 254px;
+    height: 70px;
+    left: 593px;
+    top: 411px;
+  }
+
+  /* -------------------------Resume_Section_Media_Query--------------------------- */
+
+  .resume-container {
+    position: absolute;
+    width: 1440px;
+    height: 123px;
+    left: 0;
+    top: 4729px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social-links {
+    margin: 0;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

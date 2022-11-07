@@ -1,16 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Setup and Mobile first
+# Lilsnow's Personal Portforlio
 
-> This is my personal portfolio for web development ( mobile version )
+> This is my personal portfolio for web development
 
 ## Built With
 
 - Html and CSS
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](Not_Yet_avaliable)
+[Live Demo Link](https://lilskyex0x.github.io/Project--My-personal-portfolio/)
 
 ## Getting Started
 
@@ -25,15 +25,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- A text editor(preferably Visual Studio Code)
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
+- Git
 
 ## Authors
 

@@ -17,6 +17,7 @@ body {
   width: 320px;
   height: 4910px;
   background: #fff;
+  overflow-x: hidden;
 }
 
 .title_font {
@@ -453,7 +454,7 @@ body {
 
 .form-container header {
   position: absolute;
-  width: 255px;
+  /* width: 255px; */
   height: 50px;
   left: 16px;
   margin-top: 28px;

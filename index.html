@@ -10,6 +10,9 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Custom Js link -->
+    <script defer src="app.js"></script>
+
 </head>
 
 <body>
@@ -21,14 +24,24 @@
             <img src="img/image_geometry_2.png" alt="image-geometry_2" class="shape2">
         </div>
         <nav class="navbar">
-            <img class="bars" src="img/ic_menu.png" alt="ic_menu">
-            <div class="navbar__links">
-                <ul>
-                    <li><a href="#">Hello</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <ul class="navbar_menu">
+                <li class="nav-item">
+                    <a href="#Hello" class="nav-link">Hello</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#About" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </div>
@@ -38,11 +51,13 @@
 
 
     <!-- headline section starts -->
-    <section class="header">
+    <section id="Hello" class="header">
         <div class="header-banner">
             <header class="name title_font">Lil-Snow</header>
-            <p class="feature">Hello! I am a software developer! I can help you build a product, feature or website. Taka a
-                look of my works. If you like what you see and have a project you need coded, don't hesitate and contact me.
+            <p class="feature">Hello! I am a software developer! I can help you build a product, feature or website.
+                Taka a
+                look of my works. If you like what you see and have a project you need coded, don't hesitate and contact
+                me.
             </p>
             <button type="submit" class="main_btn">Start collaboration</button>
         </div>
@@ -65,7 +80,7 @@
 
 
     <!-- work section starts -->
-    <section class="work">
+    <section id="Projects" class="work">
         <header class="projectH1">Projects</header>
         <div class="showcase">
 
@@ -200,17 +215,19 @@
 
 
     <!-- about section starts -->
-    <section class="about">
+    <section id="About" class="about">
         <div class="cv_block">
             <header class="title_font">About</header>
-            <p class="about_feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
+            <p class="about_feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ea eiusmod</p>
             <button type="submit" class="cv_btn">
                 <a href="#">Get my CV <img src="img/Group 61.svg" alt="Get_my_CV"></a>
             </button>
         </div>
 
         <div class="mask_container">
-        <!-- language block -->
+            <!-- language block -->
             <div class="mask_block">
                 <h3 class="list_text">Languages</h3>
                 <ul class="listings">
@@ -221,7 +238,7 @@
                 </ul>
                 <img class="mask_img" src="img/ic_languages_mob.png" alt="Mask_img">
             </div>
-    
+
             <!-- framework block -->
             <div class="mask_block2">
                 <h3 class="list_text">Frameworks</h3>
@@ -234,7 +251,7 @@
                 </ul>
                 <img class="mask_img" src="img/ic_framework.png" alt="Mask_img">
             </div>
-    
+
             <!-- skils block -->
             <div class="mask_block3">
                 <h3 class="list_text">Skills</h3>
@@ -255,12 +272,13 @@
     <!-- about section ends -->
 
     <!-- Contact Form section starts here -->
-    <section class="form-container">
+    <section id="Contact" class="form-container">
         <div class="img_geometry">
             <img src="img/image_geometry_1.png" alt="image-geometry_1" class="shape1">
         </div>
         <header class="title_font">Get Started</header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eos.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio? Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eos.</p>
         <form class="form" action="https://formspree.io/f/xqkjgdvv" method="POST">
             <ul>
                 <li>
@@ -270,7 +288,8 @@
                     <input type="email" name="email" placeholder="Your Email" required>
                 </li>
                 <li>
-                    <textarea name="message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500" required></textarea>
+                    <textarea name="message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500"
+                        required></textarea>
                 </li>
                 <li>
                     <button type="submit">Start collaboration</button>
@@ -295,4 +314,5 @@
     <!-- Resume section ends here -->
 
 </body>
+
 </html>

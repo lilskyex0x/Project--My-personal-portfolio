@@ -8,8 +8,8 @@
   text-decoration: none;
 }
 
-body {
-  height: 5000px;
+.hiddenSec {
+  display: none !important;
 }
 
 html {
@@ -23,6 +23,153 @@ html {
   line-height: 100%;
   color: #1a2236;
 }
+
+/* -----------------------------POPUP CSS SECTION STARTS------------------------------------ */
+
+.popup__container {
+  width: 100%;
+  padding: 16px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: #1a2236 28px solid;
+}
+
+.popup__title {
+  align-self: flex-start;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.popup__img {
+  width: 100%;
+}
+
+.popup__feature {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+}
+
+.btn6 {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-right: 154px;
+}
+
+.popup__btn {
+  width: 80%;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background: #fff;
+  color: #1a2236;
+  transition: 0.5s;
+}
+
+.popup__btn:hover {
+  background-color: #92dcdc;
+  cursor: pointer;
+}
+
+.popup__btn2 {
+  width: 80%;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background: #fff;
+  color: #1a2236;
+  transition: 0.5s;
+}
+
+.popup__btn2:hover {
+  background-color: #92dcdc;
+  cursor: pointer;
+}
+
+.popup__btn a {
+  color: #1a2236;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup__btn2 a {
+  color: #1a2236;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech__list {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.list {
+  width: auto;
+  height: auto;
+  background-color: #92dcdc;
+  text-align: center;
+}
+
+.tech__btn {
+  padding: 6px;
+  background: #98dede;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+  transition: 0.5s;
+  border: 1px solid rgb(73, 73, 73);
+}
+
+.tech__btn:hover {
+  background-color: #1a2236;
+  color: #98dede;
+}
+
+.previous__next {
+  display: none;
+}
+
+.popupBtncross {
+  position: absolute;
+  top: 42px;
+  right: 36px;
+}
+
+.popupBtncross img {
+  height: 24px;
+}
+
+/* -----------------------------PopUp CSS SECTION ENDS-------------------------------------- */
 
 /* -----------------------------NAVBAR CSS SECTION STARTS----------------------------------- */
 
@@ -219,39 +366,6 @@ html {
   font-size: 20px;
   line-height: 80%;
   color: #fff;
-}
-
-.tech__list {
-  width: auto;
-  height: 22px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.list {
-  width: auto;
-  height: auto;
-  background-color: #92dcdc;
-  text-align: center;
-}
-
-.tech__btn {
-  padding: 6px;
-  background: #98dede;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10.3334px;
-  line-height: 80%;
-  color: #1a2236;
-  transition: 0.5s;
-  border: 1px solid rgb(73, 73, 73);
-}
-
-.tech__btn:hover {
-  background-color: #1a2236;
-  color: #98dede;
 }
 
 .project__btn {
@@ -577,6 +691,95 @@ html {
 /* ---------------------------------------------------------------MEDIA__QUERY__SECTION-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media (min-width: 768px) {
+  .popup__container {
+    /* width: 1300px;
+    height: 1711px; */
+    padding: 60px;
+  }
+
+  .popup__title {
+    width: 800px;
+    height: 48px;
+    font-size: 60px;
+    margin-right: 368px;
+  }
+
+  .popup__btn,
+  .popup__btn2 {
+    width: 20%;
+  }
+
+  .tech__list {
+    margin-right: 600px;
+  }
+
+  .popup__feature {
+    width: 700px;
+    height: 216px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1a2236;
+  }
+
+  .previous__next {
+    width: 787px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .previous {
+    position: relative;
+    width: 239px;
+    height: 27px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+  }
+
+  .previous img {
+    position: absolute;
+    left: 0;
+  }
+
+  .next {
+    position: relative;
+    width: 170px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+  }
+
+  .next img {
+    position: absolute;
+    right: 0;
+  }
+
+  .previous a,
+  .next a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: right;
+    color: #1a2236;
+  }
+
+  .popupBtncross {
+    top: 59px;
+    right: 90px;
+  }
+
+  .popupBtncross img {
+    height: 16px;
+  }
+
   /* ---------------------------------------Navbar--------------- */
   #navbar {
     position: relative;

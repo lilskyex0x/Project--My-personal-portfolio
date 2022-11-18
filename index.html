@@ -2,307 +2,327 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lilsnow's Portfolio</title>
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Custom Js link -->
     <script defer src="app.js"></script>
-
 </head>
 
 <body>
-    <!-- toolbar section start -->
-
-    <div class="toolbar">
-        <div class="img_geometry">
-            <img src="img/image_geometry_1.png" alt="image-geometry_1" class="shape1">
-            <img src="img/image_geometry_2.png" alt="image-geometry_2" class="shape2">
-        </div>
+    <!-- Navbar section start -->
+    <section id="navbar">
         <nav class="navbar">
-            <ul class="navbar_menu">
-                <li class="nav-item">
-                    <a href="#Hello" class="nav-link">Hello</a>
+            <ul class="navbar__menu">
+                <li class="navbar__items">
+                    <a class="nav__link" href="#Hello">Hello</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#Projects" class="nav-link">Projects</a>
+                <li class="navbar__items">
+                    <a class="nav__link" href="#Project">Project</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#About" class="nav-link">About</a>
+                <li class="navbar__items">
+                    <a class="nav__link" href="#About">About</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#Contact" class="nav-link">Contact</a>
+                <li class="navbar__items">
+                    <a class="nav__link" href="#Contact">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
-    </div>
-
-    <!-- toolbar section ends -->
-
-
-
-    <!-- headline section starts -->
-    <section id="Hello" class="header">
-        <div class="header-banner">
-            <header class="name title_font">Lil-Snow</header>
-            <p class="feature">Hello! I am a software developer! I can help you build a product, feature or website.
-                Taka a
-                look of my works. If you like what you see and have a project you need coded, don't hesitate and contact
-                me.
-            </p>
-            <button type="submit" class="main_btn">Start collaboration</button>
-        </div>
-        <div class="img_geometry1">
-            <img src="img/image_dots.svg" alt="image_dots">
-            <img src="img/image-geometry_1.svg" alt="image-geometry_1">
-            <img src="img/image-geometry_2.svg" alt="image-geometry_2">
-            <img src="img/image-geometry_3.svg" alt="image-geometry_3">
-            <img src="img/image-geometry_4.svg" alt="image-geometry_4">
-            <img src="img/image-geometry_5.svg" alt="image-geometry_5">
-            <img src="img/image-geometry_6.svg" alt="image-geometry_6">
-            <img src="img/image-geometry_7.svg" alt="image-geometry_7">
-            <img class="dots" src="img/image_dots.svg" alt="image_dots">
-        </div>
     </section>
+    <!-- Navbar section ends -->
 
+    <!-- Hello Section Starts -->
+    <section id="Hello" class="hello__container">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <header class="banner">
+            <h1 class="title__font name">Lil-Snow</h1>
+            <p class="feature">
+                Hello! I am a software developer! I can help you build a product,
+                feature or website. Taka a look of my works. If you like what you see
+                and have a project you need coded, don't hesitate and contact me.
+            </p>
+            <button type="submit" class="header__btn">Start Collaboration</button>
+        </header>
+    </section>
+    <!-- Hello Section Ends -->
 
-    <!-- headline section ends -->
+    <!-- Project Section Starts -->
+    <section id="Project" class="project__container">
+        <h2 class="title__font project__title">Projects</h2>
 
-
-
-    <!-- work section starts -->
-    <section id="Projects" class="work">
-        <header class="projectH1">Projects</header>
         <div class="showcase">
-
             <!-- project 1 showcase -->
-            <section class="project1">
-                <img class="project_img" src="img/Project1.png" alt="Project1">
+            <section id="project1">
+                <img class="project__img" src="img/Rectangle 21.svg" alt="Project 1">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
 
             <!-- project 2 showcase -->
-            <section class="project2">
-                <img class="project_img" src="img/Project2.png" alt="Project2">
+            <section id="project2">
+                <img class="project__img" src="img/Project2.png" alt="Project 2">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
 
             <!-- project 3 showcase -->
-            <section class="project3">
-                <img class="project_img" src="img/Project3.png" alt="Project3">
+            <section id="project3">
+                <img class="project__img" src="img/Project3.png" alt="Project 3">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
 
             <!-- project 4 showcase -->
-            <section class="project4">
-                <img class="project_img" src="img/Project4.png" alt="Project4">
+            <section id="project4">
+                <img class="project__img" src="img/Project4.png" alt="Project 4">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
 
             <!-- project 5 showcase -->
-            <section class="project5">
-                <img class="project_img" src="img/Project5.png" alt="Project5">
+            <section id="project5">
+                <img class="project__img" src="img/Project5.png" alt="Project 5">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
 
             <!-- project 6 showcase -->
-            <section class="project6">
-                <img class="project_img" src="img/Project6.png" alt="Project6">
+            <section id="project6">
+                <img class="project__img" src="img/Project6.png" alt="Project 6">
                 <div class="menu">
-                    <h2 class="sub_title">Project name goes here</h2>
-                    <ul class="list">
-                        <li><a href="#" class="btn2">HTML/CSS</a></li>
-                        <li><a href="#" class="btn2">Ruby on Rails</a></li>
-                        <li><a href="#" class="btn2">JavaScript</a></li>
+                    <h3 class="project__name">Project name goes here</h3>
+                    <ul class="tech__list">
+                        <li class="list">
+                            <a class="tech__btn" href="#">HTML/CSS</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">Ruby on Rails</a>
+                        </li>
+                        <li class="list">
+                            <a class="tech__btn" href="#">JavaScript</a>
+                        </li>
                     </ul>
-                    <button type="submit" class="btn3">
+                    <button type="submit" class="project__btn">
                         <div class="text">
-                            <h2 class="text">See this project</h2>
-                        </div>
-                        <div class="arrow">
-                            <img src="img/ic_arrow_right.png" alt="ic_arrow_right">
+                            <h4>See this project</h4>
                         </div>
                     </button>
                 </div>
             </section>
         </div>
     </section>
-    <!-- work section ends -->
+    <!-- Project Section Ends -->
 
-
-    <!-- about section starts -->
-    <section id="About" class="about">
-        <div class="cv_block">
-            <header class="title_font">About</header>
-            <p class="about_feature">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ea eiusmod</p>
-            <button type="submit" class="cv_btn">
-                <a href="#">Get my CV <img src="img/Group 61.svg" alt="Get_my_CV"></a>
-            </button>
-        </div>
-
-        <div class="mask_container">
-            <!-- language block -->
-            <div class="mask_block">
-                <h3 class="list_text">Languages</h3>
-                <ul class="listings">
-                    <li><a href="#">JavaScript(ES5/ES6)</a></li>
-                    <li><a href="#">Ruby</a></li>
-                    <li><a href="#">Html</a></li>
-                    <li><a href="#">CSS</a></li>
-                </ul>
-                <img class="mask_img" src="img/ic_languages_mob.png" alt="Mask_img">
+    <!-- About Section Starts -->
+    <section id="About" class="about__container">
+        <div class="mask__container">
+            <div class="cv__block">
+                <h2 class="title__font about__title">About</h2>
+                <p class="about__feature">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint. Debitis perspiciatis neque
+                    officia aut ex! Architecto illum ratione quod harum quos numquam, ea facilis!
+                </p>
+                <button type="submit" class="cv__btn">Get my cv</button>
             </div>
+            <div class="card__block">
+                <!-- language block -->
+                <div class="language">
+                    <h3 class="card__text">Languages</h3>
+                    <ul class="card__list">
+                        <li>
+                            <a href="#">JavaScript(ES5/ES6)</a>
+                        </li>
+                        <li>
+                            <a href="#">Ruby</a>
+                        </li>
+                        <li>
+                            <a href="#">Html</a>
+                        </li>
+                        <li>
+                            <a href="#">CSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- language block -->
 
-            <!-- framework block -->
-            <div class="mask_block2">
-                <h3 class="list_text">Frameworks</h3>
-                <ul class="listings">
-                    <li><a href="#">Bootstrap</a></li>
-                    <li><a href="#">Ruby on rails</a></li>
-                    <li><a href="#">RSpec</a></li>
-                    <li><a href="#">Capibara</a></li>
-                    <li><a href="#">Selenium</a></li>
-                </ul>
-                <img class="mask_img" src="img/ic_framework.png" alt="Mask_img">
-            </div>
+                <!-- Framework block -->
+                <div class="framework">
+                    <h3 class="card__text">Frameworks</h3>
+                    <ul class="card__list">
+                        <li>
+                            <a href="#">Bootstrap</a>
+                        </li>
+                        <li>
+                            <a href="#">Ruby on Rails</a>
+                        </li>
+                        <li>
+                            <a href="#">RSpec</a>
+                        </li>
+                        <li>
+                            <a href="#">Capibara</a>
+                        </li>
+                        <li>
+                            <a href="#">Selenium</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Framework block -->
 
-            <!-- skils block -->
-            <div class="mask_block3">
-                <h3 class="list_text">Skills</h3>
-                <ul class="listings">
-                    <li><a href="#">Codekit</a></li>
-                    <li><a href="#">Codepen</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">GitlAb</a></li>
-                    <li><a href="#">Terminal</a></li>
-                </ul>
-                <img class="mask_img" src="img/ic_skills.png" alt="Mask_img">
-            </div>
-            <div class="mask_dot">
-                <img src="img/image_dots_with_teal.svg" alt="Mask_dot">
+                <!-- Skill block -->
+                <div class="skill">
+                    <h3 class="card__text">Skills</h3>
+                    <ul class="card__list">
+                        <li>
+                            <a href="#">Codekit</a>
+                        </li>
+                        <li>
+                            <a href="#">Codepen</a>
+                        </li>
+                        <li>
+                            <a href="#">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#">Gitlab</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminal</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Skill block -->
+
             </div>
         </div>
     </section>
-    <!-- about section ends -->
+    <!-- About Section Ends -->
 
-    <!-- Contact Form section starts here -->
-    <section id="Contact" class="form-container">
-        <div class="img_geometry">
-            <img src="img/image_geometry_1.png" alt="image-geometry_1" class="shape1">
-        </div>
-        <header class="title_font">Get Started</header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, odio? Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eos.</p>
-        <form class="form" action="https://formspree.io/f/xqkjgdvv" method="POST">
-            <ul>
+    <!-- Contact Form Section Starts -->
+    <section id="Contact" class="form__container">
+        <h2 class="title__font form__title">Get Started</h2>
+        <p class="form__feature">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo beatae ipsum eum, aut, architecto
+            delectus sed laboriosam, quo quibusdam maiores quos illum atque. Quis officia iste quia voluptas, incidunt
+            odit?
+        </p>
+        <form class="form" action="https://formspree.io/f/xqkjgdvv" method="post">
+            <ul class="form__list">
                 <li>
-                    <input type="text" name="name" placeholder="Your Name" maxlength="30" required>
+                    <input class="form__name" type="text" name="name" placeholder="Your name" maxlength="30" required>
                 </li>
                 <li>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input class="form__email" type="email" name="email" placeholder="Your email" required>
                 </li>
                 <li>
-                    <textarea name="message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500"
-                        required></textarea>
+                    <textarea class="textarea" name="Message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500" required></textarea>
                 </li>
                 <li>
-                    <button type="submit">Start collaboration</button>
+                    <button class="form__btn" type="submit">Start Collaboration</button>
                 </li>
             </ul>
         </form>
     </section>
-    <!-- Contact Form section end here -->
+    <!-- Contact Form Section Ends -->
 
-    <!-- Resume section starts here -->
-    <footer class="resume-container">
-        <a href="#">Get my Resume <img class="resume-icon" src="img/Union.svg" alt="Resume"></a>
-        <ul class="social-links">
+    <!-- Resume Section Starts -->
+    <footer id="Resume" class="resume__container">
+        <div class="resume__ic">
+            <a href="#">Get my Resume</a>
+        </div>
+        <ul class="social__link">
             <li><a href="#"><img src="img/ic_stackoverflow.svg" alt="ic_stackoverflow"></a></li>
             <li><a href="#"><img src="img/ic_github.svg" alt="ic_github"></a></li>
             <li><a href="#"><img src="img/Vector.svg" alt="ic_twitter"></a></li>
@@ -311,7 +331,7 @@
             <li><a href="#"><img src="img/Vector (3).svg" alt="ic_angelist"></a></li>
         </ul>
     </footer>
-    <!-- Resume section ends here -->
+    <!-- Resume Section Ends -->
 
 </body>
 

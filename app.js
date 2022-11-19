@@ -164,3 +164,25 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// Preserve Storage Section
+
+const nameData = document.querySelector('#name');
+const emailData = document.querySelector('#mail');
+const textData = document.querySelector('#textarea');
+form.addEventListener('submit', () => {
+  const Data = {
+    Name: nameData.value,
+    Email: emailData.value,
+    Text: textData.value,
+  };
+  localStorage.setItem('data', JSON.stringify(Data));
+});
+
+const AutoFiller = localStorage.getItem('data');
+if (AutoFiller) {
+  const DataStored = JSON.parse(localStorage.getItem('data'));
+  nameData.value = DataStored.Name;
+  emailData.value = DataStored.Email;
+  textData.value = DataStored.Text;
+}

@@ -67,10 +67,9 @@ html {
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 50px;
-  margin-right: 154px;
 }
 
 .popup__btn {
@@ -702,6 +701,11 @@ html {
     height: 48px;
     font-size: 60px;
     margin-right: 368px;
+  }
+
+  .btn6 {
+    flex-direction: row;
+    margin-right: 154px;
   }
 
   .popup__btn,

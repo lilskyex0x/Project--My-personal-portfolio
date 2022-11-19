@@ -647,6 +647,23 @@ html {
   color: #1a2236;
 }
 
+#error {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+
+#errorText {
+  background-color: #e6dddd86;
+  border: 2px solid rgb(254, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  width: 100%;
+  margin: 10px 0;
+}
+
 /* -----------------------------CONTACT FORM SECTION CSS STARTS------------------------------------- */
 
 /* -----------------------------RESUME SECTION CSS STARTS------------------------------------- */
@@ -691,8 +708,6 @@ html {
 
 @media (min-width: 768px) {
   .popup__container {
-    /* width: 1300px;
-    height: 1711px; */
     padding: 60px;
   }
 

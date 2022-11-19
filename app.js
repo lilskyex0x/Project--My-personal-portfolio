@@ -147,3 +147,6 @@ buttons.forEach((button) => {
     btnClose.addEventListener('click', closePopup);
   });
 });
+
+
+// I have gone through the code and i can't find where the problem is.

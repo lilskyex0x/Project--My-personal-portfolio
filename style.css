@@ -708,8 +708,6 @@ html {
 
 @media (min-width: 768px) {
   .popup__container {
-    /* width: 1300px;
-    height: 1711px; */
     padding: 60px;
   }
 

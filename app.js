@@ -16,61 +16,72 @@ document.querySelectorAll('.nav__link').forEach((n) => n.addEventListener('click
 
 // PopUp Project DIV Js
 
-const projectList = [
-  {
-    title: 'My First Project',
-    img: 'img/Rectangle 21.svg',
-    imgAlt: 'Project 1',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
-  {
-    title: 'My Second Project',
-    img: 'img/Rectangle 46.svg',
-    imgAlt: 'Project 2',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
-  {
-    title: 'My Third Project',
-    img: 'img/Project3.png',
-    imgAlt: 'Project 3',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
-  {
-    title: 'My Fourth Project',
-    img: 'img/Project4.png',
-    imgAlt: 'Project 4',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
-  {
-    title: 'My Fifth Project',
-    img: 'img/Project5.png',
-    imgAlt: 'Project 5',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
-  {
-    title: 'My Sixth Project',
-    img: 'img/Project6.png',
-    imgAlt: 'Project 6',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.'],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
-  },
+const projectList = [{
+  title: 'My First Project',
+  img: 'img/Rectangle 21.svg',
+  imgAlt: 'Project 1',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
+{
+  title: 'My Second Project',
+  img: 'img/Rectangle 46.svg',
+  imgAlt: 'Project 2',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
+{
+  title: 'My Third Project',
+  img: 'img/Project3.png',
+  imgAlt: 'Project 3',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
+{
+  title: 'My Fourth Project',
+  img: 'img/Project4.png',
+  imgAlt: 'Project 4',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
+{
+  title: 'My Fifth Project',
+  img: 'img/Project5.png',
+  imgAlt: 'Project 5',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
+{
+  title: 'My Sixth Project',
+  img: 'img/Project6.png',
+  imgAlt: 'Project 6',
+  tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  des: [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi<br><br>Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris nisi.',
+  ],
+  git: ['#', 'See Github'],
+  demo: ['#', 'See Demo'],
+},
 ];
 
 const body = document.querySelector('#project__popup');

@@ -147,3 +147,20 @@ buttons.forEach((button) => {
     btnClose.addEventListener('click', closePopup);
   });
 });
+
+// Form Validation Section
+
+const form = document.getElementById('form');
+const inputEmail = document.getElementById('email');
+const errorPop = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const mail = inputEmail.value.trim();
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (!regex.test(mail)) {
+    errorPop.innerHTML = '<div id="errorText">Email should be in lower case only !</div>';
+  } else {
+    form.submit();
+  }
+});

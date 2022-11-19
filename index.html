@@ -300,13 +300,13 @@
             delectus sed laboriosam, quo quibusdam maiores quos illum atque. Quis officia iste quia voluptas, incidunt
             odit?
         </p>
-        <form class="form" action="https://formspree.io/f/xqkjgdvv" method="post">
+        <form id="form" class="form" action="https://formspree.io/f/xqkjgdvv" method="post">
             <ul class="form__list">
                 <li>
-                    <input class="form__name" type="text" name="name" placeholder="Your name" maxlength="30" required>
+                    <input id="name" class="form__name" type="text" name="name" placeholder="Your name" maxlength="30" required>
                 </li>
                 <li>
-                    <input class="form__email" type="email" name="email" placeholder="Your email" required>
+                    <input id="email" class="form__email" type="email" name="email" placeholder="Your email" required>
                 </li>
                 <li>
                     <textarea class="textarea" name="Message" placeholder="Enter your message here..." cols="25" rows="5" maxlength="500" required></textarea>
@@ -315,6 +315,7 @@
                     <button class="form__btn" type="submit">Start Collaboration</button>
                 </li>
             </ul>
+            <div id="error"></div>
         </form>
     </section>
     <!-- Contact Form Section Ends -->
